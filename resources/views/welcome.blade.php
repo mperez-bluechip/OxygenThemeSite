@@ -88,7 +88,7 @@
 		</div>
 	</nav>
 
-	<!-- <header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);"> -->
+	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);">
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
@@ -184,7 +184,7 @@
 				</div>
 
 				<div class="col-md-6">
-					<!-- <div class="gtco-video gtco-bg" style="background-image: url(images/img_1.jpg); "> -->
+					<div class="gtco-video gtco-bg" style="background-image: url(images/img_1.jpg); ">
 						<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a>
 						<div class="overlay"></div>
 					</div>
@@ -193,7 +193,7 @@
 		</div>
 	</div>
 
-	<!-- <div id="gtco-counter" class="gtco-bg gtco-counter" style="background-image:url(images/img_bg_2.jpg);"> -->
+	<div id="gtco-counter" class="gtco-bg gtco-counter" style="background-image:url(images/img_bg_2.jpg);">
 		<div class="gtco-container">
 			<div class="row">
 				<div class="display-t">
@@ -260,7 +260,7 @@
 						<div class="item">
 							<div class="testimony-slide active text-center">
 								<figure>
-									<!-- <img src="images/person_1.jpg" alt="user"> -->
+									<img src="images/person_1.jpg" alt="user">
 								</figure>
 								<span>Jean Doe, via <a href="#" class="twitter">Twitter</a></span>
 								<blockquote>
@@ -271,7 +271,7 @@
 						<div class="item">
 							<div class="testimony-slide active text-center">
 								<figure>
-									<!-- <img src="images/person_2.jpg" alt="user"> -->
+									<img src="images/person_2.jpg" alt="user">
 								</figure>
 								<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
 								<blockquote>
@@ -282,7 +282,7 @@
 						<div class="item">
 							<div class="testimony-slide active text-center">
 								<figure>
-									<!-- <img src="images/person_3.jpg" alt="user"> -->
+									<img src="images/person_3.jpg" alt="user">
 								</figure>
 								<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
 								<blockquote>
