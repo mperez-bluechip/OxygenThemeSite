@@ -40,7 +40,7 @@ jsSources = [
   'resources/scripts/tagline.js',
   'resources/scripts/template.js'
 ];
-sassSources = ['resources/assets/sass/app.scss'];
+sassSources = ['resources/assets/sass/bootstrap/*.scss'];
 //htmlSources = [outputDir + '*.html'];
 jsonSources = [outputDir + 'js/*.json'];
 
@@ -63,7 +63,7 @@ gulp.task('js', function() {
 gulp.task('compass', function() {
   gulp.src(sassSources)
     .pipe(compass({
-      sass: 'resources/assets/sass',
+      sass: 'resources/assets/sass/bootstrap',
       image: outputDir + 'images',
       style: sassStyle
     })
@@ -75,7 +75,7 @@ gulp.task('compass', function() {
 gulp.task('watch', function() {
   gulp.watch(coffeeSources, ['coffee']);
   gulp.watch(jsSources, ['js']);
-  gulp.watch('resources/assets/sass/*.scss', ['compass']);
+  gulp.watch('resources/assets/sass/bootstrap/*.scss', ['compass']);
   gulp.watch('resources/views/*.blade.php', ['php']);
   // gulp.watch('builds/development/js/*.json', ['json']);
   // gulp.watch('builds/development/images/**/*.*', ['images']);
