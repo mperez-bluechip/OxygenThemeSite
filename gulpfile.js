@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     compass = require('gulp-compass'),
     connect = require('gulp-connect'),
     gulpif = require('gulp-if'),
-    minifyCSS = require('gulp-minify-css'),
+    cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
     minifyHTML = require('gulp-minify-html'),
     jsonminify = require('gulp-jsonminify'),
@@ -40,10 +40,19 @@ jsSources = [
   // 'components/scripts/rclick.js',
   // 'components/scripts/pixgrid.js',
   'resources/scripts/tagline.js',
-  'resources/scripts/template.js'
+  'resources/scripts/template.js',
+  'resources/scripts/jquery.countTo.js',
+  'resources/scripts/jquery.easing.1.3.js',
+  'resources/scripts/main.js',
+  'resources/scripts/magnific-popup-options.js'
 ];
 sassSources = ['resources/assets/sass/app.scss'];
-cssSources = ['resources/css/*.css'];
+cssSources = ['resources/css/animate.css',
+              'resources/css/bootstrap.css',
+              'resources/css/flexslider.css',
+              'resources/css/icomoon.css',
+              'resources/css/magnific-popup.css'
+];
 //htmlSources = [outputDir + '*.html'];
 jsonSources = [outputDir + 'js/*.json'];
 
@@ -71,23 +80,23 @@ gulp.task('compass', function() {
       style: sassStyle
     })
     .on('error', gutil.log))
-    .pipe(gulpif(env === 'production', minifyCSS()))
+    .pipe(gulpif(env === 'production', cleanCSS()))
     .pipe(gulp.dest(outputDir + 'css'))
     .pipe(connect.reload())
 });
 
-gulp.task('css', function(){
-  gulp.src(cssSources)
-  .pipe(gulpif(env === 'production', minifyCSS()))
-  .pipe(gulp.dest(outputDir + 'css'))
-  .pipe(connect.reload())
+gulp.task('css', function() {
+    gulp.src(cssSources)
+    .pipe(gulpif(env === 'production', cleanCSS()))
+    .pipe(gulp.dest(outputDir + 'css'))
+    .pipe(connect.reload())
 });
 
 gulp.task('watch', function() {
   gulp.watch(coffeeSources, ['coffee']);
-  gulp.watch(jsSources, ['js']);
+  gulp.watch('resources/scripts/*.js', ['js']);
   gulp.watch('resources/assets/sass/*.scss', ['compass']);
-  gulp.watch(cssSources, ['css']);
+  gulp.watch('resources/css/*.css', ['css']);
   gulp.watch('resources/views/*.blade.php', ['php']);
   // gulp.watch('builds/development/js/*.json', ['json']);
   gulp.watch('resources/images/**/*.*', ['images']);
@@ -113,7 +122,7 @@ gulp.task('php', function(){
 // });
 //
 gulp.task('images', function(){
-  gulp.src('resources/images/**/*.*')
+  gulp.src('resources/images/*.*')
   .pipe(gulpif(env === 'production', imagemin({
     progressive: true,
     svgoPlugins: [{ removeViewBox: false }],
