@@ -53,7 +53,7 @@
 	</head>
 	<body>
 
-	<div class="gtco-loader" style="display: none;"></div>
+	<div class="gtco-loader"></div>
 
 	<div id="page">
 	<nav class="gtco-nav" role="navigation">
@@ -64,7 +64,7 @@
 				</div>
 				<div class="col-xs-8 text-center menu-1">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
+						<li class="active"><a href="{{ URL::to('#') }}">Home</a></li>
 						<li><a href="{{ URL::to('/about') }}">About</a></li>
 						<li class="has-dropdown">
 							<a href="services.html">Services</a>

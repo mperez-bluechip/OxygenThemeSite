@@ -28,10 +28,6 @@
 
 	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
 
-
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="<?php echo asset('css/animate.css'); ?>">
 	<link rel="stylesheet" href="<?php echo asset('css/bootstrap.css'); ?>">
@@ -61,12 +57,12 @@
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-xs-2">
-					<div id="gtco-logo"><a href="index.html">Oxygen.</a></div>
+					<div id="gtco-logo"><a href="{{ URL::to('/welcome') }}">Oxygen.</a></div>
 				</div>
 				<div class="col-xs-8 text-center menu-1">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="about.html">About</a></li>
+						<li><a href="{{ URL::to('/welcome') }}">Home</a></li>
+						<li class="active"><a href="{{ URL::to('#') }}">About</a></li>
 						<li class="has-dropdown">
 							<a href="services.html">Services</a>
 							<ul class="dropdown">
