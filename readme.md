@@ -9,4 +9,4 @@ Git Initializion |
 README file created |
 .gitignore file created |
 New Github Repo created |
-Added url repo link to package.json file | Various Dev Dependencies: minification, compass, coffee, etc | Gulpfile required dependencies to generate various gulp tasks and defaults
+Added url repo link to package.json file | Various Dev Dependencies: minification, compass, coffee, etc | Gulpfile required dependencies to generate various gulp tasks and defaults | Routing created for menu tabs via web.php | Blade templating linked to menu pages |
