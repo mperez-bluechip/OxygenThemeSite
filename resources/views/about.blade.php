@@ -28,25 +28,24 @@
 
 	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="<?php echo asset('css/animate.css'); ?>">
+	<link rel="stylesheet" href="<?php echo asset('css/bootstrap.css'); ?>">
+	<link rel="stylesheet" href="<?php echo asset('css/app.css'); ?>">
+	<link rel="stylesheet" href="<?php echo asset('css/flexslider.css'); ?>">
+	<link rel="stylesheet" href="<?php echo asset('css/icomoon.css'); ?>">
+	<link rel="stylesheet" href="<?php echo asset('css/magnific-popup.css'); ?>">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="<?php echo asset('css/owl.carousel.min.css'); ?>">
+	<link rel="stylesheet" href="<?php echo asset('css/owl.theme.default.min.css'); ?>">
+
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- <script src="js/modernizr-2.6.2.min.js"></script> -->
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -300,23 +299,19 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 
+
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="<?php echo asset('js/jquery.min.js'); ?>"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="<?php echo asset('js/bootstrap.min.js'); ?>"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="<?php echo asset('js/jquery.waypoints.min.js'); ?>"></script>
 	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
+	<script src="<?php echo asset('js/owl.carousel.min.js'); ?>"></script>
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<script src="<?php echo asset('js/jquery.magnific-popup.min.js'); ?>"></script>
 	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script src="<?php echo asset('js/script.js'); ?>"></script>
 
 	</body>
 </html>
