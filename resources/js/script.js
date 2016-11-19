@@ -10221,17 +10221,6 @@ return jQuery;
 } );
 
 },{}],2:[function(require,module,exports){
-var $, fill;
-
-$ = require('jquery');
-
-(fill = function(item) {
-  return $('.tagline').append("" + item);
-})('Test tagline here');
-
-fill;
-
-
 (function (factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD

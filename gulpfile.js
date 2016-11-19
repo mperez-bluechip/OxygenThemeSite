@@ -39,8 +39,8 @@ coffeeSources = ['resources/coffee/tagline.coffee'];
 jsSources = [
   // 'components/scripts/rclick.js',
   // 'components/scripts/pixgrid.js',
-  'resources/scripts/tagline.js',
-  'resources/scripts/template.js',
+  // 'resources/scripts/tagline.js',
+  // 'resources/scripts/template.js',
   'resources/scripts/jquery.countTo.js',
   'resources/scripts/jquery.easing.1.3.js',
   'resources/scripts/main.js',
