@@ -9,4 +9,4 @@ Git Initializion |
 README file created |
 .gitignore file created |
 New Github Repo created |
-Added url repo link to package.json file |
+Added url repo link to package.json file | Various Dev Dependencies: minification, compass, coffee, etc | Gulpfile required dependencies to generate various gulp tasks and defaults
