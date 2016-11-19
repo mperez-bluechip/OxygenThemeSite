@@ -31,10 +31,11 @@
 
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="<?php echo asset('css/app.css'); ?>">
   <link rel="stylesheet" href="<?php echo asset('css/animate.css'); ?>">
   <link rel="stylesheet" href="<?php echo asset('css/bootstrap.css'); ?>">
-  <link rel="stylesheet" href="<?php echo asset('css/flexslider.css'); ?>">
+  <link rel="stylesheet" href="<?php echo asset('css/app.css'); ?>">
+  <link rel="stylesheet" href="<?php //echo asset('css/flexslider.css'); ?>">
+  <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="<?php echo asset('css/icomoon.css'); ?>">
   <link rel="stylesheet" href="<?php echo asset('css/magnific-popup.css'); ?>">
 
