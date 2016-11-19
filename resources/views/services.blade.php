@@ -62,9 +62,9 @@
 				<div class="col-xs-8 text-center menu-1">
 					<ul>
 						<li><a href="{{ URL::to('/welcome') }}">Home</a></li>
-						<li class="active"><a href="{{ URL::to('#') }}">About</a></li>
-						<li class="has-dropdown">
-							<a href="{{ URL::to('/services') }}">Services</a>
+						<li><a href="{{ URL::to('/about') }}">About</a></li>
+						<li class="has-dropdown active">
+							<a href="{{ URL::to('#') }}">Services</a>
 							<ul class="dropdown">
 								<li><a href="#">Web Design</a></li>
 								<li><a href="#">eCommerce</a></li>
@@ -101,7 +101,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>About Us</h1>
+							<h1>Our Services</h1>
 							<h2>Free html5 templates Made by <a href="http://gettemplates.co" target="_blank">gettemplates.co</a></h2>
 						</div>
 					</div>
@@ -110,25 +110,77 @@
 		</div>
 	</header>
 
-	<div class="gtco-section">
+	<div id="gtco-features">
 		<div class="gtco-container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading gtco-heading-sm">
-					<h2>Our History</h2>
+			<div class="row">
+				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+					<div class="feature-center">
+						<span class="icon">
+							<i class="icon-eye"></i>
+						</span>
+						<h3>Retina Ready</h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<p><a href="#" class="btn btn-primary">Learn More</a></p>
+					</div>
 				</div>
+				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+					<div class="feature-center">
+						<span class="icon">
+							<i class="icon-command"></i>
+						</span>
+						<h3>Fully Responsive</h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<p><a href="#" class="btn btn-primary">Learn More</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+					<div class="feature-center">
+						<span class="icon">
+							<i class="icon-power"></i>
+						</span>
+						<h3>Web Starter</h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<p><a href="#" class="btn btn-primary">Learn More</a></p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+					<div class="feature-center">
+						<span class="icon">
+							<i class="icon-eye"></i>
+						</span>
+						<h3>Retina Ready</h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<p><a href="#" class="btn btn-primary">Learn More</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+					<div class="feature-center">
+						<span class="icon">
+							<i class="icon-command"></i>
+						</span>
+						<h3>Fully Responsive</h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<p><a href="#" class="btn btn-primary">Learn More</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+					<div class="feature-center">
+						<span class="icon">
+							<i class="icon-power"></i>
+						</span>
+						<h3>Web Starter</h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<p><a href="#" class="btn btn-primary">Learn More</a></p>
+					</div>
+				</div>
+
 			</div>
-			<div class="row animate-box">
-				<div class="col-md-6">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo est quis mollitia ratione magni assumenda repellat atque modi temporibus tempore ex. Dolore facilis ex sunt ea praesentium expedita numquam?</p>
-					<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci rem dolorem nesciunt perferendis quae amet deserunt eum labore quidem minima.</p>
-				</div>
-				<div class="col-md-6">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo est quis mollitia ratione magni assumenda repellat atque modi temporibus tempore ex. Dolore facilis ex sunt ea praesentium expedita numquam?</p>
-					<p><a href="#" class="btn btn-primary">Our Services</a></p>
-				</div>
-			</div>
+
+
 		</div>
 	</div>
+
 
 	<div class="gtco-cover gtco-cover-sm" style="background-image:url(images/img_bg_3.jpg);">
 		<div class="overlay"></div>
@@ -145,54 +197,53 @@
 			</div>
 		</div>
 	</div>
-	<div id="gtco-team" class="gtco-section">
+
+	<div id="gtco-features-2">
 		<div class="gtco-container">
-			<div class="row animate-box">
+			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Our Team</h2>
+					<h2>Why Choose Us</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-					<div class="gtco-staff">
-						<img src="images/person_1.jpg" alt="Free HTML5 Templates by gettemplates.co">
-						<h3>Jean Smith</h3>
-						<strong class="role">Web Designer</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-						<ul class="gtco-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
+				<div class="col-md-6">
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-check"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Retina Ready</h3>
+							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-					<div class="gtco-staff">
-						<img src="images/person_2.jpg" alt="Free HTML5 Templates by gettemplates.co">
-						<h3>Hush Raven</h3>
-						<strong class="role">Front-end Developer</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-						<ul class="gtco-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-check"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Fully Responsive</h3>
+							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+						</div>
 					</div>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-check"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Ready To Use</h3>
+							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+						</div>
+					</div>
+
 				</div>
-				<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-					<div class="gtco-staff">
-						<img src="images/person_3.jpg" alt="Free HTML5 Templates by gettemplates.co">
-						<h3>Alex King</h3>
-						<strong class="role">Back-end Developer</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
-						<ul class="gtco-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
+
+				<div class="col-md-6">
+					<div class="gtco-video gtco-bg" style="background-image: url(images/img_1.jpg); ">
+						<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a>
+						<div class="overlay"></div>
 					</div>
 				</div>
 			</div>
@@ -294,7 +345,6 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-
 
 	<!-- jQuery -->
 	<script src="<?php echo asset('js/jquery.min.js'); ?>"></script>

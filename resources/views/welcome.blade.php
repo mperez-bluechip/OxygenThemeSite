@@ -67,7 +67,7 @@
 						<li class="active"><a href="{{ URL::to('#') }}">Home</a></li>
 						<li><a href="{{ URL::to('/about') }}">About</a></li>
 						<li class="has-dropdown">
-							<a href="services.html">Services</a>
+							<a href="{{ URL::to('/services') }}">Services</a>
 							<ul class="dropdown">
 								<li><a href="#">Web Design</a></li>
 								<li><a href="#">eCommerce</a></li>
