@@ -547,4 +547,5 @@
 	<script src="<?php echo asset('js/script.js'); ?>"></script>
 
 	</body>
+
 </html>

@@ -4,6 +4,8 @@ var gulp = require('gulp'),
     browserify = require('gulp-browserify'),
     compass = require('gulp-compass'),
     connect = require('gulp-connect'),
+    connectPHP = require('gulp-connect-php'),
+    browserSync = require('browser-sync'),
     gulpif = require('gulp-if'),
     cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
@@ -23,6 +25,7 @@ var env,
     jsonSources,
     outputDir,
     sassStyle;
+
 
 env = process.env.NODE_ENV || 'development';
 
@@ -109,6 +112,21 @@ gulp.task('connect', function() {
   });
 });
 
+gulp.task('connect-sync', function() {
+  connectPHP.server({
+    hostname: '127.0.0.1',
+    bin: '/Applications/MAMP/bin/php/php7.0.8/bin/php',
+    ini: '/Applications/MAMP/bin/php/php7.0.8/conf/php.ini',
+    port: 8080,
+    base: outputDir
+  });
+  browserSync({
+    open: true,
+    proxy: '127.0.0.1:8080'
+  });
+});
+
+
 gulp.task('php', function(){
   gulp.src('resources/views/*.blade.php')
   .pipe(connect.reload({stream:true}))
@@ -139,4 +157,4 @@ gulp.task('images', function(){
 //     .pipe(connect.reload())
 // });
 
-gulp.task('default', ['php', 'coffee', 'js', 'compass', 'images', 'css', 'connect', 'watch']);
+gulp.task('default', ['php', 'coffee', 'js', 'compass', 'images', 'css', 'connect-sync', 'connect', 'watch']);

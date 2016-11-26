@@ -9,6 +9,7 @@
   },
   "author": "Manny Perez",
   "devDependencies": {
+    "browser-sync": "^2.18.2",
     "clean-css": "^3.4.20",
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
@@ -17,6 +18,7 @@
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^5.0.0",
+    "gulp-connect-php": "0.0.8",
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "^3.0.3",
     "gulp-jsonminify": "^1.0.0",
