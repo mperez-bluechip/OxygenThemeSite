@@ -132,13 +132,6 @@ gulp.task('php', function(){
   .pipe(connect.reload({stream:true}))
 });
 
-// gulp.task('html', function() {
-//   gulp.src('builds/development/*.html')
-//     .pipe(gulpif(env === 'production', minifyHTML()))
-//     .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
-//     .pipe(connect.reload())
-// });
-//
 gulp.task('images', function(){
   gulp.src('resources/images/*.*')
   .pipe(gulpif(env === 'production', imagemin({
