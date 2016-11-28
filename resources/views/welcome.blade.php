@@ -67,6 +67,7 @@
 				</div>
 				<div class="col-xs-8 text-center menu-1">
 					<ul>
+						<li><a href="../../../index.php">Back to 3DU</a></li>
 						<li class="active"><a href="{{ URL::to('#') }}">Home</a></li>
 						<li><a href="{{ URL::to('/about') }}">About</a></li>
 						<li class="has-dropdown">
@@ -92,7 +93,7 @@
 				</div>
 				<div class="col-xs-2 text-right hidden-xs menu-2">
 					<ul>
-						<li class="btn-cta"><a href="#"><span>Login</span></a></li>
+						<li class="btn-cta"><a href="{{ URL::to('../index.php') }}"><span>Login</span></a></li>
 					</ul>
 				</div>
 			</div>

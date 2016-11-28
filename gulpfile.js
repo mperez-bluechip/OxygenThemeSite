@@ -122,7 +122,7 @@ gulp.task('connect-sync', function() {
   });
   browserSync({
     open: true,
-    proxy: '127.0.0.1:8080'
+    proxy: '127.0.0.1:8888'
   });
 });
 

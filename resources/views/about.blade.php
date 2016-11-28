@@ -61,6 +61,7 @@
 				</div>
 				<div class="col-xs-8 text-center menu-1">
 					<ul>
+						<li><a href="../../../index.php">Back to 3DU</a></li>
 						<li><a href="{{ URL::to('/welcome') }}">Home</a></li>
 						<li class="active"><a href="{{ URL::to('#') }}">About</a></li>
 						<li class="has-dropdown">
